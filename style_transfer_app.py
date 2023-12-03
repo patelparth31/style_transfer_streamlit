@@ -109,6 +109,10 @@ target_image = st.file_uploader("Upload Target Photo", type=["jpg", "jpeg", "png
 content = load_img(primary_image, shape=(512, 512)).to(device)
 style = load_img(target_image, shape=(512, 512)).to(device)
 
+"""
+Upload your Photos and Get result soon... real soon... Good Night ^_^
+"""
+
 # Style transfer button
 if st.button("Perform Style Transfer"):
     if primary_image is not None and target_image is not None:
