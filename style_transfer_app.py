@@ -35,8 +35,8 @@ def get_features(img, model):
         img = layer(img)
         if name in layers:
           features[layers[name]] = img
-
-      return features
+            
+    return features
 
 def gram_matrix(tensor):
   _, c, h, w = tensor.size()
