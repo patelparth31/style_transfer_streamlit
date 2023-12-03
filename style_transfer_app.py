@@ -1,7 +1,12 @@
 import streamlit as st
-import tensorflow as tf
-from PIL import Image
+import cv2
+import os
+import torch
 import numpy as np
+import PIL.Image as Image
+import torch.optim as optim
+import matplotlib.pyplot as plt
+from torchvision import transforms, models
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
