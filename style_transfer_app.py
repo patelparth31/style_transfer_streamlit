@@ -1,6 +1,4 @@
 import streamlit as st
-import cv2
-import os
 import torch
 import numpy as np
 import PIL.Image as Image
